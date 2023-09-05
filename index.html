@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/49692110a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <span id="element"></span>
+          <h1>
+            Hi, I'm <span>Shashank</span><br />
+            Mishra from Delhi India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- about------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./one1.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              "Hello, I'm Shashank, a computer science enthusiast and frontend
+              developer. Currently, I am working as an intern at Tech Mahindra
+              in the role of a developer. My passion lies in creating intuitive
+              and user-friendly interfaces that enhance the overall user
+              experience.Throughout my journey, I have undertaken several
+              projects that have helped me sharpen my skills. Some notable
+              projects include developing a face age and gender detection system
+              using Python and machine learning techniques, building a bank
+              management system using Python, and designing a portfolio website
+              using HTML, CSS, and JavaScript. With a strong foundation in
+              programming languages such as Python, HTML, CSS, and JavaScript, I
+              have developed a good understanding of web development and
+              front-end technologies. Additionally, I possess knowledge in core
+              subjects like Object-Oriented Programming (OOPs), Database
+              Management Systems (DBMS), computer networks, and Data Structures.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Python Developer</span><br />Designing Web/App
+                  interfaces
+                </li>
+                <li>
+                  <span>Frontend Developer</span><br />Designing Web/App
+                  interfaces
+                </li>
+                <li>
+                  <span>Ui/Ux Developer</span><br />Building Ui/Ux Designs
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>April 2023-Current</span><br />Frontend Develper at Tech
+                  Mahindra
+                </li>
+                <li>
+                  <span>July 2023-August 2023</span><br />Web Developer at
+                  Codsoft.
+                </li>
+                <li>
+                  <span>July 2022-Oct 2022</span><br />Python Developer at Cetpa
+                  Infotech
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-Current</span><br />
+                  Pursuing Btech in `Computer Science Engineering` From Gniot
+                  Group Of Institutions.(75%)
+                </li>
+                <li>
+                  <span>2018-2019</span><br />Completed Intermediate From
+                  `Patanjali Rishikul Allahabad`(CBSE).(72%)
+                </li>
+                <li>
+                  <span>2016-2017</span><br />Completed High School From `Swami
+                  Vivekanand Vidya Ashram Allahabad`(CBSE).(86%)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   
+    services------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designer</h2>
+            <p>
+              Proficient in crafting stunning web designs, combining creativity
+              and functionality. Expertise in HTML, CSS, JavaScript and
+              responsive design, delivering visually appealing and user-friendly
+              websites.
+              <br />
+              <a href="#">Learn more</a>
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Ui/Ux Designer</h2>
+            <p>
+              Skilled in crafting intuitive UI/UX designs, balancing aesthetics
+              and user-centered functionality. Proficient in wireframing,
+              prototyping, and enhancing user experiences to create engaging
+              digital interfaces.
+              <br />
+              <a href="#">Learn more</a>
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Python Developer</h2>
+            <p>
+              Experienced Python Developer with a strong grasp of software
+              development principles. Proficient in designing, implementing, and
+              maintaining Python applications, emphasizing efficiency,
+              reliability, and code quality.
+              <br />
+              <a href="#">Learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      portfolio ------------------------------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./work-1.png" />
+            <div class="layer">
+              <h3>Apple Website Clone</h3>
+              <p>
+                Created an Apple website clone requires HTML for structure, CSS
+                for styling, and JavaScript for interactivity. Emulate Apple's
+                design, content, and functionality while adhering to legal and
+                ethical standards.
+              </p>
+              <a href="https://github.com/shashankgeekboy/apple-website-clone"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./work-2.png" />
+            <div class="layer">
+              <h3>Usability Hub Clone</h3>
+              <p>
+                Developed a Usability Hub website replica using HTML, CSS, and
+                JavaScript, faithfully recreating its user-friendly interface
+                and functionality for usability testing and feedback.
+              </p>
+              <a
+                href="https://github.com/shashankgeekboy/--Usability--Hub-clone-using-html-css-and-javascript"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./work-3.png" />
+            <div class="layer">
+              <h3>Holistic Detection Python</h3>
+              <p>
+                I created a Holistic Detection system using OpenCV and Python,
+                enabling comprehensive recognition of human body poses,
+                gestures, and facial features for various applications.
+              </p>
+              <a
+                href="https://github.com/shashankgeekboy/Holistic-Detection-OpenCV-Python/blob/main/one.py"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact ------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >shashankmishra9190@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+919369006191</p>
+            <br />
+            <div class="social-icons">
+              <a href="https://www.instagram.com/codewithgeekboy/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/shashank-mishra-6a870b212/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/shashankgeekboy"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com/Shashankm108"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href=""></a>
+            </div>
+            <a href="./shashankmishra_resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Made by <i class="fa-solid fa-heart"></i> Shashank Mishra
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbylivo3r35xDRiy3C696f_l-SzlC5YZQoxo3bUXCUOgNiD7pSS8Iw7P5EjG8RyRTtPwlQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Frontend Developer",
+          "Python Developer",
+          "Web Developer",
+          "Vedio Editor.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
